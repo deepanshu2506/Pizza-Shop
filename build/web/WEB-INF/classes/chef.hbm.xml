@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+    <class name="Beans.chef" table="chef">
+        <id name="ChefId" type="int">
+            <generator class="increment"/>
+        </id>
+        <property name="ChefName" type="string"/>
+        <property name="password" type="string"/>
+        <property name="active" type="int"/>
+        <property name="busytime" type="int"/>
+    </class>
+</hibernate-mapping>

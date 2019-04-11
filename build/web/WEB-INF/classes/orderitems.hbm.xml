@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+    <class name="Beans.orderitems" table="orderitems">
+    <id name="orderitemId" type="int">
+            <generator class="increment"/>
+        </id>
+        <property name="OrderId" type="int"/>
+        <property name="itemId" type="int"/>
+        <property name="quantity" type="int"/>
+        <property name="customerid" type="int"/>
+    </class>
+</hibernate-mapping>

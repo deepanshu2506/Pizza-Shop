@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+    <class name="Beans.tables" table="tables">
+        <id name="tableNo" type="int">
+            <generator class="increment"/>
+        </id>
+        <property name="seatingCapacity" type="int"/>
+        <property name="available" type="int"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+    <class name="Beans.Customers" table="customers">
+        <id name="UserID" type="int">
+            <generator class="increment"/>
+        </id>
+        <property name="UserName" type="string"/>
+        <property name="PhoneNo" type="string"/>
+        <property name="Address" type="string"/>
+        <property name="email" type="string"/>
+        <property name="gender" type="string"/>
+    </class>
+</hibernate-mapping>
